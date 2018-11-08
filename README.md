@@ -1,0 +1,1 @@
+# cogsci-latex-template
