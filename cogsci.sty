@@ -2,7 +2,8 @@
 
 
 % Modified: Niels Taatgen (taatgen@cmu.edu) 10/24/2006
-% Modified: Roger Levy (rplevy@mit.edu) 11/8/2018
+% Modified: Roger Levy (rplevy@mit.edu) 11/8/2018, borrowing from
+% ACL .sty files to add author anonymity switch.
 
 % Place this in a file called cogsci.sty in the TeX search path.
 % (Placing it in the same directory as the paper should also work.)
@@ -47,8 +48,12 @@
 \cogscifinalfalse
 \def\cogscifinalcopy{\global\cogscifinaltrue}
 
+\newif\iftwopagesummary
+\twopagesummaryfalse
+\def\twopagesummarysubmission{\global\twopagesummarytrue}
 
-\typeout{Conference Style for COGSCI -- last modified October 24, 2006}
+
+\typeout{Conference Style for COGSCI -- last modified December 31, 2018}
 
 
 % Physical page layout:
@@ -115,11 +120,13 @@
 % Author anonymized for submission version
 \newcommand\outauthor{
     \begin{tabular}[t]{c}
-	\ifcogscifinal 
+	\ifcogscifinal
 	     \bf\@author
-	\else 
-		% Avoiding common accidental de-anonymization issue. --MM
-        {\bf \large Anonymous CogSci submission}
+	\else \iftwopagesummary
+             \bf\@author
+        \else
+        {\bf \large Anonymous CogSci submission} % Avoiding common accidental de-anonymization issue. --MM 
+
 	\fi
     \end{tabular}}
 
