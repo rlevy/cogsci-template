@@ -15,7 +15,7 @@
 % Modified : Eli M. Silk (esilk@pitt.edu)            05/24/2005
 % Modified : Niels Taatgen (taatgen@cmu.edu)         10/24/2006
 % Modified : David Noelle (dnoelle@ucmerced.edu)     11/19/2014
-% Modified : Roger Levy (rplevy@mit.edu)     11/8/2018
+% Modified : Roger Levy (rplevy@mit.edu)     12/31/2018
 
 
 
@@ -24,18 +24,29 @@
 \documentclass[10pt,letterpaper]{article}
 
 \usepackage{cogsci}
+
+%\cogscifinalcopy % Uncomment this line for the final submission 
+
+
 \usepackage{pslatex}
 \usepackage{apacite}
+\usepackage{float} % Roger Levy added this and changed figure/table
+                   % placement to [H] for conformity to Word template,
+                   % though floating tables and figures to top is
+                   % still generally recommended!
 
-%\cogscifinalcopy % Uncomment this line for the final submission
+%\usepackage[none]{hyphenat} % Sometimes it can be useful to turn off
+%hyphenation for purposes such as spell checking of the resulting
+%PDF.  Uncomment this block to turn off hyphenation.
+
 
 %\setlength\titlebox{4.5cm}
 % You can expand the titlebox if you need extra space
 % to show all the authors. Please do not make the titlebox
 % smaller than 4.5cm (the original size).
-% The EMNLP text had this to say here:
-%%we will check this
-%%in the camera-ready version and ask you to change it back.
+%%If you do, we reserve the right to require you to change it back in
+%%the camera-ready version, which could interfere with the timely
+%%appearance of your paper in the Proceedings.
 
 
 
@@ -55,7 +66,8 @@
 
 
 \begin{abstract}
-The abstract should be one paragraph, indented 1/8~inch on both sides,
+Include no author information in the initial submission, to facilitate
+blind review.  The abstract should be one paragraph, indented 1/8~inch on both sides,
 in 9~point font with single spacing. The heading ``{\bf Abstract}''
 should be 10~point, bold, centered, with one line of space below
 it. This one-paragraph abstract section is required only for standard
@@ -77,19 +89,23 @@ The entire content of a paper (including figures, references, and anything else)
 The text of the paper should be formatted in two columns with an
 overall width of 7 inches (17.8 cm) and length of 9.25 inches (23.5
 cm), with 0.25 inches between the columns. Leave two line spaces
-between the last author listed and the text of the paper. The left
-margin should be 0.75 inches and the top margin should be 1 inch.
-\textbf{The right and bottom margins will depend on whether you use
-  U.S. letter or A4 paper, so you must be sure to measure the width of
-  the printed text.} Use 10~point Times Roman with 12~point vertical
-spacing, unless otherwise specified.
+between the last author listed and the text of the paper; the text of
+the paper (starting with the abstract) should begin no less than 2.75 inches below the top of the
+page. The left margin should be 0.75 inches and the top margin should
+be 1 inch.  \textbf{The right and bottom margins will depend on
+  whether you use U.S. letter or A4 paper, so you must be sure to
+  measure the width of the printed text.} Use 10~point Times Roman
+with 12~point vertical spacing, unless otherwise specified.
 
-The title should be in 14~point, bold, and centered. The title should
+The title should be in 14~point bold font, centered. The title should
 be formatted with initial caps (the first letter of content words
-capitalized and the rest lower case). Each author's name should appear
-on a separate line, 11~point bold, and centered, with the author's
-email address in parentheses. Under each author's name list the
-author's affiliation and postal address in ordinary 10~point type.
+capitalized and the rest lower case). In the initial submission, the
+phrase ``Anonymous CogSci submission'' should appear below the title,
+centered, in 11~point bold font.  In the final submission, each
+author's name should appear on a separate line, 11~point bold, and
+centered, with the author's email address in parentheses. Under each
+author's name list the author's affiliation and postal address in
+ordinary 10~point type.
 
 Indent the first line of each paragraph by 1/8~inch (except for the
 first paragraph of a new section). Do not add extra vertical space
@@ -135,7 +151,7 @@ more authors.
 \subsection{Footnotes}
 
 Indicate footnotes with a number\footnote{Sample of the first
-footnote.} in the text. Place the footnotes in 9~point type at the
+footnote.} in the text. Place the footnotes in 9~point font at the
 bottom of the column on which they appear. Precede the footnote block
 with a horizontal rule.\footnote{Sample of the second footnote.}
 
@@ -145,10 +161,10 @@ with a horizontal rule.\footnote{Sample of the second footnote.}
 Number tables consecutively. Place the table number and title (in
 10~point) above the table with one line space above the caption and
 one line space below it, as in Table~\ref{sample-table}. You may float
-tables to the top or bottom of a column, or set wide tables across
+tables to the top or bottom of a column, and you may set wide tables across
 both columns.
 
-\begin{table}[!ht]
+\begin{table}[H]
 \begin{center} 
 \caption{Sample table title.} 
 \label{sample-table} 
@@ -175,10 +191,10 @@ number and caption, in 10~point, after the figure with one line space
 above the caption and one line space below it, as in
 Figure~\ref{sample-figure}. If necessary, leave extra white space at
 the bottom of the page to avoid splitting the figure and figure
-caption. You may float figures to the top or bottom of a column, or
-set wide figures across both columns.
+caption. You may float figures to the top or bottom of a column, and
+you may set wide figures across both columns.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \begin{center}
 \fbox{CoGNiTiVe ScIeNcE}
 \end{center}
