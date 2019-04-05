@@ -31,3 +31,40 @@ template in Overleaf for the 6-page submission format can be found at
 https://v2.overleaf.com/read/wwwzyhdxtyhg; in this example,
 `cogsci_template.tex` has been renamed `main.tex` and you are off to
 the races.
+
+## Preparing an anonymized submission
+
+If you are using the Word template, simply replace the **How to Make a
+Proceedings Paper Submission** title with the title of your submitted
+paper, and then replace the formatting instructions
+
+If you are using the LaTeX template, make sure that the
+`\cogscifinalcopy` command is commented out.  
+
+In either case, remember that you need to leave at least 2.75 inches
+between the top of the first page and the abstract & text of your
+paper.  Since the top margin needs to be 1 inch on all pages, this
+means that there needs to be at least 1.75 inches of space on page 1
+in which nothing but your paper title and **Anonymous CogSci
+submission** appears.  Additionally, please remember not to include
+acknowledgments in the final version of your paper.
+
+## Preparing the de-anonymized final version of your accepted paper
+
+If you are using the Word template, replace **Anonymous CogSci
+submission** with your author list and affiliations.  If you are using
+the LaTeX template, uncomment the `\cogscifinalcopy` command and
+recompile.  The file `cogsci_template_final_version_deanonymized.pdf`
+provides an example of author list & affiliation formatting.
+
+In the final version of the paper, the title, author, abstract, and
+text of the paper must fit within six pages.  Up to one additional
+page can be used for acknowledgments and references.  In the final
+version of the paper for the proceedings (but not the initial
+anonymized submission), be sure to include any acknowledgments that
+may be appropriate.
+
+Once again, make sure that you adhere to the general formatting
+instructions, including that there are at least 2.75 inches between
+the top of page 1 and the start of the abstract and text.
+
